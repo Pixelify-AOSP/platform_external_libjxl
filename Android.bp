@@ -23,7 +23,6 @@ cc_library {
     ],
     sanitize: {
         all_undefined: true,
-        integer_overflow: true,
     },
     // Libjxl is not CFI-enabled, so disabling LTO here is safe.
     lto: {
