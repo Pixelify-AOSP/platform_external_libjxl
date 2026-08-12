@@ -25,6 +25,10 @@ cc_library {
         all_undefined: true,
         integer_overflow: true,
     },
+    // Libjxl is not CFI-enabled, so disabling LTO here is safe.
+    lto: {
+        never: true,
+    },
     export_include_dirs: [
         "lib/include",
         "gen/include",
