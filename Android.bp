@@ -28,6 +28,9 @@ cc_library {
     lto: {
         never: true,
     },
+    lto: {
+        never: true,
+    },
     export_include_dirs: [
         "lib/include",
         "gen/include",
